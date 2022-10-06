@@ -1,0 +1,61 @@
+#include<bits/stdc++.h>
+using namespace std;
+void heapify(int a[],int n,int i)
+{
+    int largest=i;
+    int l=2*i;
+    int r=2*i+1;
+    if((l<n)&&(a[l]>a[largest]))
+    {
+        largest=l;
+    }
+    if((r<n)&&(a[r]>a[largest]))
+    {
+        largest=r;
+    }
+    if(largest!=i)
+    {
+        swap(a[largest],a[i]);
+        heapify(a,n,largest);
+    }
+}
+void heapsort(int a[],int n)
+{
+    for(int i=n/2;i>=0;i--)
+    {
+        heapify(a,n,i);
+    }
+    for(int i=n-1;i>0;i--)
+    {
+        swap(a[0],a[i]);
+        heapify(a,i,0);
+    }
+}
+
+void printarray(int a[],int n)
+{
+    cout<<"The sorted elements are:";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main()
+{
+    int n;
+    cout<<"Enter the size: ";
+    cin>>n;
+    int a[n];
+    cout<<"Enter the elements: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    heapsort(a,n);
+    printarray(a,n);
+
+
+return 0;
+}

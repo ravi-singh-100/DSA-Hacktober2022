@@ -1,6 +1,5 @@
-# DSA-Hacktober2022
 
-# HacktoberFest_DSA
+# HACKTOBER FEST 2022
 
 This is an open source project that is dedicated to the hacktober fest for the year 2022. 
 

@@ -1,21 +1,22 @@
-
-import  java.util.*;
-public class LinearSearch {
-    public static  void main(String[] args) {
-        int arr[]={1,2,3,4,5,6};
-        int target = 3;
-
-        System.out.println(LS(arr, target, arr[0]));
+class LinearSearch {
+    public static int search(int arr[], int x)
+    {
+        int N = arr.length;
+        for (int i = 0; i < N; i++) {
+            if (arr[i] == x)
+                return i;
+        }
+        return -1;
     }
-    static int LS(int arr[],int target,int index){
-        if(index == arr.length){
-            return -1;
-        }
-       if( arr[index] == target ){
-            return index;
-        }
-
-        return LS(arr, target, index+1);
-
+    public static void main(String args[])
+    {
+        int arr[] = { 2, 3, 4, 10, 40 };
+        int x = 10;
+        int result = search(arr, x);
+        if (result == -1)
+            System.out.print(
+                "Element is not present in array");
+        else
+            System.out.print("Element is present at index "+ result);
     }
 }

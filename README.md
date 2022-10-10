@@ -63,17 +63,17 @@ Contributing for the first time? I got you 😀
 - Then commit the files using the `✔ button` in vs code or use command `git commit -m "message"` command where in `message`, you will write a message about whatever you added.<br/><br/>
 
 
-- Go to the main page of your forked repo on your account. You will see a `Compare And Pull Request` button. Click that.
+- Go to the main page of your forked repo on your account. You will see a `Compare And Pull Request` button. Click on that.
 
 
-- Go to `Pull requests` tab if you dont see the button mentioned.
+- Go to `Pull requests` tab if you don't see the button mentioned.
 
 
 - You will be redirected to the pull requests tab of this repo. Add a title for your pull request and a little description.
 
 ## Things to note ✏:
 
-- Make sure you dont change some one else's added commits.
+- Make sure you don't change some one else's added commits.
 - Be respectful and make sure you dont add any offensive content.
 - Do write a brief `description` and proper `title` for your pull request.
 

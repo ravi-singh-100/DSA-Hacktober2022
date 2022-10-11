@@ -1,0 +1,35 @@
+class Solution {
+public:
+    string reverseWords(string s) {
+        int i=0,j;
+        string sub,res;
+        int n=s.size();
+        
+        while(i<n)
+        {
+            while(i<n && s[i] == ' ')
+            {
+                i++;
+            }
+            if(i>=n)
+                break;
+            j=i+1;
+            while(j<n && s[j] != ' ')
+            {
+                j++;
+            }
+            sub = s.substr(i,j-i);
+            
+            if(res.empty())
+            {
+                res = sub;
+            }
+            else
+            {
+                res = sub + " " + res;
+            }
+            i=j+1;
+        }
+        return res;
+    }
+};
